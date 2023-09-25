@@ -3,25 +3,27 @@
     padding: 0;
  }
  :root{
-    --dark-blue: rgb(39, 24, 126);
-    --light-blue: rgb(117, 139, 253);
-    --lighter-blue: rgb(117, 139, 253);
+    --dark-gray: rgb(57, 62, 70);
+    --light-gray: rgb(178, 177, 185);
+    --yellow: rgb(255, 211, 105);
+    --light-yellow: rgb(255, 241, 193);
     --white: rgb(241, 242, 246);
-    --orange: rgb(255, 134, 0);
+    --orange: rgb(255, 188, 44);
  }
  body{
     font-family: 'Oswald', sans-serif;
  }
  .container{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 5fr 1fr;
     text-align: center;
+    
 
 
  }
  .header{
-    background-color: var(--dark-blue);
-    grid-column: 2/3;
+    background-color: var(--dark-gray);
+    grid-column: 2/4;
  }
  .header{
     display: grid;
@@ -48,6 +50,13 @@
     background-color: rgb(227, 223, 223);
     align-self: center;
     flex: 1;
+    outline: none;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+ }
+ .search-input:focus{
+   border: 2px solid black;
+   background-color: var(--light-gray);
  }
 
  .search-icon{
@@ -73,9 +82,12 @@
     align-items: center;
     color: white;
     text-align: start;
+    font-size: 1.4rem;
+    
  }
  .greeting > img{
     padding-left: 2rem;
+    width: 5rem;
  }
  .header-buttons{
     display:flex;
@@ -122,13 +134,53 @@
     padding: 1rem;
     padding-right: 3rem;
  }
+ i.material-icons{
+   font-size: 2.4rem;
+   
+   
+}
  .main-content{
-    background-color: var(--light-blue);
+    background-color: var(--light-gray);
     grid-column: 2/3;
 
  }
- i.material-icons{
-    color: white;
-    font-size: 2.4rem;
-    
+ .cards{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-template-rows: 1fr 1fr;
+   text-align: start;
+   column-gap: 2rem;
+   row-gap: 3rem;
+   padding: 2rem;
+ }
+ .star-icon , 
+ .share-icon{
+   color: var(--orange);
+   font-size: 3rem;
+   align-self: end;
+   margin-bottom: 0;
+ }
+ .title{
+   font-size: 1.4rem;
+   text-align: start;
+   padding-left: 2rem;
+   padding-top: 1.4rem;
+
+ }
+ .card{
+   display: flex;
+   flex-direction: column;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 10rem;
+    max-height: 13rem;
+ }
+ .trending-card > img{
+    width: 5rem;
+ }
+ 
+ .announcement{
+    background-color: var(--light-gray);
+   
  }
