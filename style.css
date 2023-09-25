@@ -27,6 +27,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: none;
  }
  /* search */
  .search-container {
@@ -95,18 +97,38 @@
     background-color: var(--orange);
 
  }
+ /* sidebar */
+.dashboard-svg{
+    width: 5rem;
+}
 
  .sidebar{
+    display: grid;
+    grid-template: 1/10;
     background-color: var(--orange);
     grid-column: 1/2;
     grid-row: 1/3;
+    padding: 2rem;
+    row-gap: 2rem;
 
+ }
+ .sidebar > *{
+    display: flex;
+    gap: 1rem;
+ }
+ .dashboard{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    padding-right: 3rem;
  }
  .main-content{
     background-color: var(--light-blue);
     grid-column: 2/3;
 
  }
- .material-icons{
+ i.material-icons{
     color: white;
+    font-size: 2.4rem;
+    
  }
