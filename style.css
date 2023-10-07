@@ -143,7 +143,6 @@ img.dashboard-svg{
    grid-column: 1/2;
    grid-row: 1/3;
    padding: 2rem;
-   height: 1100px;
 }
 i.material-icons.sidebar-icon{
   font-size: 2.4rem;
@@ -178,6 +177,10 @@ i.material-icons.sidebar-icon{
 }
 
 /* my projects (main content) */
+a {
+  text-decoration: none;
+  color: inherit; 
+}
 
 .main-content{
    background-color: var(--light-gray);
@@ -219,6 +222,7 @@ i.material-icons.sidebar-icon{
    padding: 1rem;
    border-radius: 10px;
    box-shadow: 3px 3px 4px var(--dark-gray);
+   min-height: 320px;
    
 }
 .card:hover{
