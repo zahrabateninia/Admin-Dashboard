@@ -14,12 +14,12 @@ Check out the live demo [here](https://zahrabateninia.github.io/Admin-Dashboard/
 
 To run this project locally, follow these steps:
 
-1. Clone the repository to your local machine using the following command:
+Clone the repository to your local machine using the following command:
 
 ```bash
 git clone https://github.com/zahrabateninia/Admin-Dashboard.git
 ```
-Open the index.html file in your preferred web browser
+and then open the index.html file in your preferred web browser
 ## Features
 
 - Utilizes modern HTML5 semantic elements for improved accessibility and structure.
